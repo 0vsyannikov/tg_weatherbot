@@ -5,10 +5,10 @@ from pyowm.utils.config import get_default_config
 config_dict = get_default_config()
 config_dict['language'] = 'ru'
 
-owm = OWM('45d4a007abaa22e657aee915f5dd51ce', config_dict)
+owm = OWM('TOKEN', config_dict)
 mgr = owm.weather_manager()
 
-bot = telebot.TeleBot("6961161412:AAFeE5kCKQUis3_uKf2MPylzBkpvhb2JGi4")
+bot = telebot.TeleBot("TOKEN")
 
 
 @bot.message_handler(content_types=['text'])
